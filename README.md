@@ -80,7 +80,7 @@ This project interacts with the blockchain via the **Sepolia Testnet**, where we
 
 > _See the attached image for the block limit trial notice on the Virtual Testnet._
 
-Let me know if you’d like any further refinements to this explanation!
+<img width="1492" alt="Screenshot 2024-11-05 at 8 42 52 PM" src="https://github.com/user-attachments/assets/0117e04a-1cf3-4f27-bd43-89c4fdd813b1">
 
 ## Running the Project
 
@@ -167,4 +167,3 @@ For testing and development, the following packages are included:
 - **pytest**: Framework for running tests.
 - **pytest-asyncio**: Adds asyncio support to pytest.
 - **pytest-mock**: Provides mock functionality for testing.
-# ai-agent-assessment
