@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "autonomous-agents"
+version = "0.1.0"
+description = "Autonomous agents system for blockchain interactions"
+authors = ["Md Mohsin Siddiqui <mdmohsinsiddiqui5@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+web3 = "^7.4.0"
+eth-typing = "^5.0.1"
+eth-account = "^0.13.4"
+colorlog = "^6.9.0"
+python-dotenv = "^1.0.1"
+redis = "^5.0.1"  # Remove aioredis and add this instead
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+agent-system = "autonomous_agents.cli.agent_cli:main"
+transfer-processor = "autonomous_agents.cli.processor_cli:main"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning",
+]
